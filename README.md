@@ -1,11 +1,13 @@
 # Coder Metabox for WordPress
- Create Pages, Posts Custom Meta Fields options.
+ Coder Metabox for WordPress - Create Pages, Posts Custom Meta Fields options.
 
-# Step 1
+## Step 1
 call coder-metabox.php file in functions.php
-`require_once('coder-metabox.php');`
+```
+require_once('coder-metabox.php');
+```
 
-# Step 2
+## Step 2
 Create New Meta Options Box
 ```
 $box = new CoderMetaBox();
@@ -14,7 +16,7 @@ $box->type ="post";
 $box->name ="Post Options";
 ```
 
-# Step 3
+## Step 3
 Create New Fields 
 ```
 $prefix = 'cits_';
@@ -34,7 +36,8 @@ $box->coder_meta_fields = array(
 );
 
 ```
-# Step 4
+
+## Step 4
 ******* Output ******
 ```
 the_coder_field('field__id');
